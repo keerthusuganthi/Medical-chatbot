@@ -1,0 +1,429 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "Good morning",
+          "Good afternoon",
+          "How are you?",
+          "Hi there",
+          "Hello, how are you?",
+          "Hey! Can you help me with health issues?"
+      ],
+      "responses": [
+          "Hello! How can I assist you today?",
+          "Hi! What can I do for you?",
+          "Hey! How can I help you?",
+          "Greetings! Feel free to share your symptoms!"
+      ]
+  },
+  {
+      "tag": "goodbye",
+      "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Take care",
+          "Thanks and goodbye",
+          "I’ll come back if I have more questions",
+          "Thanks for the help, bye!"
+      ],
+      "responses": [
+          "Goodbye! Take care of yourself!",
+          "See you soon! Stay safe!",
+          "Take care! Feel free to return if you need assistance!"
+      ]
+    },
+    {
+      "tag": "heart_disease_assessment",
+      "patterns": [
+        "I am 50 1 3 130 200 1 0 0 150 0 2.3 1 0 2",
+        "heart disease assessment",
+        "I feel discomfort in chest",
+        "chest pain",
+        "chest tightness",
+        "I have high cholesterol",
+        "I have high blood pressure",
+        "I feel shortness of breath"
+      ],
+      "responses": [
+        "I will assess your heart disease risk based on your data. Recommended medications: Aspirin, Statins, ACE inhibitors, Beta blockers, Nitroglycerin."
+      ]
+    },
+    {
+      "tag": "stroke_symptoms",
+      "patterns": [
+        "Numbness on one side",
+        "Sudden confusion",
+        "Difficulty speaking",
+        "Vision problems",
+        "Severe headache",
+        "Loss of balance",
+        "Sudden trouble walking",
+        "Dizziness"
+      ],
+      "responses": [
+        "These could be signs of a stroke. It's critical to seek medical attention immediately. Recommended medications: Aspirin, Tissue Plasminogen Activator (tPA), Anticoagulants, Statins."
+      ]
+    },
+    {
+      "tag": "chest_pain_symptoms",
+      "patterns": [
+        "Chest pain",
+        "Pain in chest",
+        "Pressure in chest",
+        "Sharp pain in chest",
+        "Chest discomfort",
+        "Tightness in chest",
+        "Shooting pain in chest",
+        "Pain radiating to arm"
+      ],
+      "responses": [
+        "Chest pain can be a serious condition, consult a doctor immediately. Recommended medications: Nitroglycerin, Aspirin, Beta blockers, Pain relievers (e.g., Ibuprofen)."
+      ]
+    },
+    {
+      "tag": "stress_symptoms",
+      "patterns": [
+        "Stress",
+        "Feeling anxious",
+        "Restlessness",
+        "Panic attack",
+        "Worrying",
+        "Feeling overwhelmed",
+        "Constant tension",
+        "Fatigue due to stress",
+        "Sleep problems due to stress"
+      ],
+      "responses": [
+        "It seems that you're feeling stressed. Stress management and relaxation techniques may help. Recommended medications: Anti-anxiety medications (e.g., Xanax, Ativan), Antidepressants (e.g., Prozac, Zoloft), Melatonin, Relaxation techniques, yoga, meditation."
+      ]
+    },
+    {
+      "tag": "dehydration_symptoms",
+      "patterns": [
+        "Thirst",
+        "Dry mouth",
+        "Fatigue",
+        "Dizziness",
+        "Headache",
+        "Dark urine",
+        "Sunken eyes",
+        "Dry skin",
+        "Confusion",
+        "Nausea",
+        "Low blood pressure",
+        "Dry lips"
+      ],
+      "responses": [
+        "These symptoms may indicate dehydration. Drink plenty of water and rest. Recommended medications: Oral Rehydration Solution (ORS), Electrolyte drinks (e.g., Pedialyte), IV fluids (in severe cases)."
+      ]
+    },
+    {
+      "tag": "fever_symptoms",
+      "patterns": [
+        "Sweating",
+        "Chills",
+        "Headache",
+        "Muscle aches",
+        "Loss of appetite",
+        "Irritability",
+        "Weakness",
+        "High temperature",
+        "Fever",
+        "Feverish feeling",
+        "Shivering",
+        "Hot flashes"
+      ],
+      "responses": [
+        "These could be symptoms of fever. Stay hydrated and rest, or consult a healthcare provider. Recommended medications: Paracetamol (Acetaminophen), Ibuprofen, Aspirin (for adults)."
+      ]
+    },
+    {
+      "tag": "asthma_symptoms",
+      "patterns": [
+        "Chest tightness",
+        "Difficulty breathing",
+        "Wheezing",
+        "Shortness of breath",
+        "Coughing",
+        "Asthma attack",
+        "Breathing problems",
+        "Increased mucus production"
+      ],
+      "responses": [
+        "It seems like you might be experiencing asthma symptoms. Please use your inhaler if prescribed. Recommended medications: Albuterol (Rescue inhaler), Steroid inhalers, Montelukast (Singulair), Leukotriene inhibitors."
+      ]
+    },
+    {
+      "tag": "common_cold_symptoms",
+      "patterns": [
+        "Runny nose",
+        "Cough",
+        "Sneezing",
+        "Congestion",
+        "Sore throat",
+        "Mild fever",
+        "Fatigue",
+        "Watery eyes",
+        "Post-nasal drip"
+      ],
+      "responses": [
+        "These symptoms are commonly associated with a cold. Get plenty of rest, stay hydrated, and consult a doctor if needed. Recommended medications: Decongestants (e.g., Pseudoephedrine), Cough syrup, Pain relievers (e.g., Paracetamol), Antihistamines."
+      ]
+    },
+    {
+      "tag": "allergy_symptoms",
+      "patterns": [
+        "Itchy eyes",
+        "Sneezing",
+        "Runny nose",
+        "Rash",
+        "Wheezing",
+        "Cough",
+        "Itchy skin",
+        "Skin rash",
+        "Hives"
+      ],
+      "responses": [
+        "These could be symptoms of an allergic reaction. Try to avoid allergens and take antihistamines as needed. Recommended medications: Antihistamines (e.g., Benadryl, Claritin), Corticosteroid nasal spray, Decongestants."
+      ]
+    },
+    {
+      "tag": "food_poisoning_symptoms",
+      "patterns": [
+        "Abdominal pain",
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Fever",
+        "Headache",
+        "Stomach cramps",
+        "Bloody stool",
+        "Dehydration"
+      ],
+      "responses": [
+        "These symptoms could indicate food poisoning. Stay hydrated, rest, and consult a doctor if symptoms persist. Recommended medications: Oral Rehydration Solution (ORS), Antiemetics (e.g., Ondansetron), Antidiarrheal medications (e.g., Loperamide)."
+      ]
+    },
+    {
+      "tag": "jaundice_symptoms",
+      "patterns": [
+        "Yellowing of skin",
+        "Yellow eyes",
+        "Dark urine",
+        "Abdominal pain",
+        "Fatigue",
+        "Nausea",
+        "Loss of appetite",
+        "Itchy skin"
+      ],
+      "responses": [
+        "These could be symptoms of jaundice, which affects the liver. Seek medical attention immediately. Recommended medications: Liver support supplements, Antihistamines for itching, Medication to treat underlying liver conditions."
+      ]
+    },
+    {
+      "tag": "severe_headache_symptoms",
+      "patterns": [
+        "Severe headache",
+        "Migraine",
+        "Headache with nausea",
+        "Pounding headache",
+        "Sensitivity to light",
+        "Throbbing headache",
+        "Headache with dizziness"
+      ],
+      "responses": [
+        "Severe headaches or migraines may require medical attention. Please rest and consult a healthcare provider if the pain persists. Recommended medications: Ibuprofen, Acetaminophen, Migraine-specific medications (e.g., Sumatriptan), Antiemetics for nausea."
+      ]
+    },
+    {
+      "tag": "flu_symptoms",
+      "patterns": [
+        "Coughing",
+        "Runny nose",
+        "Sore throat",
+        "Fever",
+        "Fatigue",
+        "Body aches",
+        "Chills",
+        "Headache",
+        "Stuffy nose",
+        "Loss of appetite",
+        "Congestion"
+      ],
+      "responses": [
+        "These symptoms could indicate the flu. Rest, hydrate, and consult a healthcare provider if symptoms worsen. Recommended medications: Antiviral medications (e.g., Oseltamivir), Pain relievers (e.g., Ibuprofen), Decongestants."
+      ]
+    },
+    {
+      "tag": "pneumonia_symptoms",
+      "patterns": [
+        "Shortness of breath",
+        "Cough with phlegm",
+        "Chest pain",
+        "Fever",
+        "Fatigue",
+        "Confusion",
+        "Rapid breathing",
+        "Bluish lips or face"
+      ],
+      "responses": [
+        "These symptoms may suggest pneumonia. It's important to seek medical attention as soon as possible. Recommended medications: Antibiotics (e.g., Azithromycin, Amoxicillin), Cough syrup, Oxygen therapy (in severe cases)."
+      ]
+    },
+    {
+      "tag": "diabetes_symptoms",
+      "patterns": [
+        "Excessive thirst",
+        "Frequent urination",
+        "Fatigue",
+        "Blurred vision",
+        "Slow healing wounds",
+        "Unexplained weight loss",
+        "Increased hunger",
+        "Numbness in hands or feet"
+      ],
+      "responses": [
+        "These symptoms could be associated with diabetes. It’s important to see a doctor for proper diagnosis. Recommended medications: Insulin, Metformin, Sulfonylureas, SGLT2 inhibitors."
+      ]
+    },
+    {
+      "tag": "hypertension_symptoms",
+      "patterns": [
+        "High blood pressure",
+        "Headache",
+        "Dizziness",
+        "Nosebleeds",
+        "Shortness of breath",
+        "Fatigue",
+        "Chest pain"
+      ],
+      "responses": [
+        "These could be symptoms of hypertension (high blood pressure). Consult a healthcare provider. Recommended medications: ACE inhibitors, Beta blockers, Diuretics, Calcium channel blockers."
+      ]
+    },
+    {
+      "tag": "gastroenteritis_symptoms",
+      "patterns": [
+        "Vomiting",
+        "Diarrhea",
+        "Abdominal cramps",
+        "Dehydration",
+        "Nausea",
+        "Fever",
+        "Headache",
+        "Body aches"
+      ],
+      "responses": [
+        "These are common symptoms of gastroenteritis. Stay hydrated and rest. Recommended medications: Antiemetics (e.g., Ondansetron), Antidiarrheal medications (e.g., Loperamide), Oral Rehydration Solution (ORS)."
+      ]
+    },
+    {
+      "tag": "menstrual_disorder_symptoms",
+      "patterns": [
+        "Irregular periods",
+        "Heavy bleeding",
+        "Severe cramps",
+        "Missed periods",
+        "Excessive hair growth",
+        "Mood swings",
+        "Hot flashes"
+      ],
+      "responses": [
+        "These symptoms could suggest a menstrual disorder. Consult a gynecologist for diagnosis. Recommended medications: Pain relievers (e.g., Ibuprofen), Hormonal therapy, Birth control pills, Progesterone therapy."
+      ]
+    },
+    {
+      "tag": "kidney_disease_symptoms",
+      "patterns": [
+        "Swelling in legs or ankles",
+        "Fatigue",
+        "Frequent urination",
+        "Foamy urine",
+        "Blood in urine",
+        "Nausea",
+        "Loss of appetite",
+        "Shortness of breath"
+      ],
+      "responses": [
+        "These symptoms may indicate kidney disease. Please consult a healthcare provider for proper treatment. Recommended medications: Diuretics, ACE inhibitors, Statins, Erythropoiesis-stimulating agents."
+      ]
+    },
+    {
+      "tag": "arthritis_symptoms",
+      "patterns": [
+        "Joint pain",
+        "Swelling in joints",
+        "Stiffness",
+        "Redness in joints",
+        "Difficulty moving joints",
+        "Joint deformity",
+        "Fatigue"
+      ],
+      "responses": [
+        "These symptoms might suggest arthritis. Consult a healthcare provider for proper diagnosis. Recommended medications: NSAIDs (e.g., Ibuprofen), Disease-modifying antirheumatic drugs (DMARDs), Corticosteroids."
+      ]
+    },
+    {
+      "tag": "thyroid_disorder_symptoms",
+      "patterns": [
+        "Fatigue",
+        "Weight gain",
+        "Dry skin",
+        "Cold intolerance",
+        "Depression",
+        "Hair thinning",
+        "Constipation"
+      ],
+      "responses": [
+        "These symptoms could suggest a thyroid disorder. A blood test can confirm the diagnosis. Recommended medications: Levothyroxine, Liothyronine, Iodine supplements."
+      ]
+    },
+    {
+      "tag": "obesity_symptoms",
+      "patterns": [
+        "Excess body weight",
+        "Difficulty losing weight",
+        "Shortness of breath",
+        "Snoring",
+        "Fatigue",
+        "Joint pain"
+      ],
+      "responses": [
+        "Obesity can lead to many health problems. Lifestyle changes, diet, and exercise are essential. Recommended medications: Orlistat, GLP-1 agonists (e.g., Liraglutide), Bariatric surgery (in severe cases)."
+      ]
+    },
+    {
+      "tag": "hiv_symptoms",
+      "patterns": [
+        "Fever",
+        "Swollen lymph nodes",
+        "Weight loss",
+        "Fatigue",
+        "Rash",
+        "Night sweats"
+      ],
+      "responses": [
+        "These could be signs of HIV infection. Get tested and consult a healthcare provider for diagnosis and treatment. Recommended medications: Antiretroviral therapy (ART), PrEP (Pre-exposure prophylaxis)."
+      ]
+    },
+    {
+      "tag": "cancer_symptoms",
+      "patterns": [
+        "Unexplained weight loss",
+        "Fatigue",
+        "Pain",
+        "Swelling or lumps",
+        "Bleeding or bruising",
+        "Changes in bowel or bladder habits"
+      ],
+      "responses": [
+        "These could be signs of cancer. Early diagnosis is crucial. Consult your doctor for further evaluation. Recommended medications: Chemotherapy, Radiation therapy, Targeted therapy, Immunotherapy."
+      ]
+    }
+  ]
+}
